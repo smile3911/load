@@ -1,4 +1,4 @@
-game.StarterGui:SetCore("SendNotification",  {
+ game.StarterGui:SetCore("SendNotification",  {
  Title = "This is only free for 2 weeks.";
  Text = "Made By ?";
  Icon = "";
