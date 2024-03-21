@@ -1071,5 +1071,3 @@ local Script = {Functions = {}}
         end
     end
 end)
-
-end)
