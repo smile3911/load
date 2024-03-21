@@ -1,16 +1,3 @@
-local player = game.Players.LocalPlayer
-
-if player.Name ~= "bobbibitybob1" then
-    local kickMessage = "You are banned from vape for trying to bypass the whitelist system :trol"
-    kickUser(kickMessage)
-else
-    print("User is whitelisted.")
-end
-
-function kickUser(message)
-    print("Kicking user: " .. message
-end
-
 game.StarterGui:SetCore("SendNotification",  {
  Title = "This is only free for 2 weeks.";
  Text = "Made By ?";
