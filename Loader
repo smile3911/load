@@ -1,8 +1,29 @@
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "LunarWare";
+ Text = "Welcome";
+ Icon = "";
+ Duration = 98083905839058095809389034;
+ Button1 = "Close";
+ Callback = NotificationBindable;
+}
+)
 local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 
-local MainUI = UILibrary.Load("LunarWare", function()
+local MainUI = UILibrary.Load("LunarWare")
 local FirstPage = MainUI.AddPage("Scripts")
-local FirstButton = FirstPage.AddButton("lunarware lock", function()
+local SecondPage = MainUI.AddPage("Soon")
+local ThirdPage = MainUI.AddPage("soon")
+local FourthPage = MainUI.AddPage("Soon")
+local FifthPage = MainUI.AddPage("Soon")
+local x = MainUI.AddPage("Soon")
+local y = MainUI.AddPage("Soon")
+
+local FirstLabel = FirstPage.AddLabel("yuh")
+local FirstLabel = ThirdPage.AddLabel("Faces And Korblox w Headless | Client Sided")
+local FirstLabel = FourthPage.AddLabel("Animations | FE")
+local FirstLabel = FifthPage.AddLabel("Combat| FE")
+
+local FirstButton = FirstPage.AddButton("Silent Aimlock Orb", function()
 getgenv().Settings = {
     rewrittenmain = {
         Enabled = true,
