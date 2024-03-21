@@ -253,7 +253,6 @@ getgenv().Settings = {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bobbbb-b/B/main/77_SJQ0ZC.lua"))()
-
 end)
 
 local FirstButton = SecondPage.AddButton("LunarWare lock", function()
