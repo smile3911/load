@@ -9,7 +9,7 @@ game.StarterGui:SetCore("SendNotification",  {
 )
 local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 
-local MainUI = UILibrary.Load("£")
+local MainUI = UILibrary.Load("LunarWare")
 local FirstPage = MainUI.AddPage("Cracked scripts")
 
 local FirstLabel = FirstPage.AddLabel("Silent aims/Locks")
