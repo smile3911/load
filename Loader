@@ -265,10 +265,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bobbbb-b/B/main/77_SJ
 
 end)
 
-local SecondButton = FirstPage.AddButton("Vortex", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/smile3911/Vortex/main/Load", true))()
-end)
-
 local FirstButton = SecondPage.AddButton("LunarWare lock", function()
 getgenv().Settings = {
     rewrittenmain = {
