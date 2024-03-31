@@ -7,7 +7,7 @@ Name = <LunarWare> - The name of the UI.
 HidePremium = <bool> - Whether or not the user details shows Premium status or not.
 SaveConfig = <false> - Toggles the config saving in the UI.
 ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroEnabled = <false> - Whether or not to show the intro animation.
 IntroText = <LunarWare> - Text to show in the intro animation.
 IntroIcon = <string> - URL to the image you want to use in the intro animation.
 Icon = <string> - URL to the image you want displayed on the window.
@@ -151,4 +151,10 @@ mt.__namecall = newcclosure(function(...)
 end)
 
 Tool.Parent = game.Players.LocalPlayer.Backpack
-    end
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
