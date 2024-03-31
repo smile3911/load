@@ -1,28 +1,68 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = Library.CreateLib("LunarWare Mobile", "Midnight")
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local LockTab = Window:NewTab("scripts")
+--[[
+Name = <LunarWare> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <false> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
 
-local LockSection = LockTab:NewSection("Cracked scripts")
+local LockTab = Window:MakeTab({
+	Name = "Locks",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-LockSection:NewLabel("h")
+--[[
+Name = <Locks> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
 
-LockSection:NewButton("ButtonText", "ButtonInfo", function()
-    getgenv().Settings = {
+local ToolSection = LockTab:AddSection({
+	Name = "lock+Q tool"
+})
+
+--[[
+Name = <lock+Q tool> - The name of the section.
+]]
+
+LockTab:AddButton({
+	Name = "Q tool",
+	Callback = function()
+      		local k="Q"local t=Instance.new("Tool")t.RequiresHandle=false t.Name=k t.TextureId="http://www.roblox.com/asset/?id=607405653"local function m()t.Parent=game.Players.LocalPlayer.Backpack print("Tool moved to your Roblox inventory.")end if not game.Players.LocalPlayer.Backpack:FindFirstChild(t.Name)then m()end local b=false local function a()if not b then b=true local v=game:GetService("VirtualInputManager")v:SendKeyEvent(true,k,false,game)wait(0.2)b=false end end t.Activated:Connect(a)game.Players.LocalPlayer.CharacterAdded:Connect(function()if not game.Players.LocalPlayer.Backpack:FindFirstChild(t.Name)then m()end end)print("Tool bound to key '"..k.."' and is in your inventory.")local AkaliNotif=loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()local Notify=AkaliNotif.Notify Notify({Description="Made by J3do",Title="Notification",Duration=5})
+      	end    
+})
+
+--[[
+Name = <Q Tool> - The name of the button.
+Callback = <are u dumb enough to> - The function of the button.
+]]
+
+LockTab:AddButton({
+	Name = "LunarWare Lock",
+	Callback = function()
+      		getgenv().Settings = {
     rewrittenmain = {
         Enabled = true,
         Key = "q",
         DOT = true,
         AIRSHOT = true,
-        NOTIF = true,
-        AUTOPRED = false,
+        NOTIF = false,
+        AUTOPRED = true,
         FOV = math.huge,
-        RESOVLER = false,
+        RESOVLER = true,
     }
 }
  
-local SelectedPart = "HumanoidRootPart"
+local SelectedPart = "UpperTorso"
 local Prediction = true
 getgenv().PredictionValue = 0.15
  getgenv().AntiGroundShots = false
@@ -369,4 +409,10 @@ getgenv().AimingSettings = {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tenakii/tenaaki/main/genericaimbot.v.2.0.0"))()
-end)
+  	end    
+})
+
+--[[
+Name = <LunarWare Lock> - The name of the button.
+Callback = <n> - The function of the button.
+]]
