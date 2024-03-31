@@ -8,7 +8,7 @@ HidePremium = <bool> - Whether or not the user details shows Premium status or n
 SaveConfig = <false> - Toggles the config saving in the UI.
 ConfigFolder = <string> - The name of the folder where the configs are saved.
 IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
+IntroText = <LunarWare> - Text to show in the intro animation.
 IntroIcon = <string> - URL to the image you want to use in the intro animation.
 Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
@@ -394,7 +394,7 @@ getgenv().AimingSettings = {
         CameraMode = true,
         MouseMode = false,
         HitAirshots = true,
-        AutoPrediction = false,
+        AutoPrediction = true,
         NotificationMode = false,
         Keybind = Enum.KeyCode.Q,
         PredictionAmount = 0.135836569819,
@@ -402,7 +402,7 @@ getgenv().AimingSettings = {
 
 
         Smoothing = {
-        Enabled = true,
+        Enabled = false,
         Amount = 0.080
     },
  }
@@ -413,6 +413,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Tenakii/tenaaki/main/
 })
 
 --[[
-Name = <LunarWare Lock> - The name of the button.
-Callback = <n> - The function of the button.
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
 ]]
