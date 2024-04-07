@@ -15,7 +15,7 @@ local isGamepadEnabled = UserInputService.GamepadEnabled
 
 if isTouchEnabled then
     
-    NotifyLib.prompt('u on phone bro?', 'loading the tool tool..', 5)
+    NotifyLib.prompt('sup', 'loading the tool tool..', 5)
     
     -- Key To Click
     getgenv().keytoclick = "Z"
@@ -23,7 +23,7 @@ if isTouchEnabled then
     -- Tool
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = ":)"
+    tool.Name = "smile.lol"
     
     -- Key To Click Simulates
     tool.Activated:connect(function()
@@ -55,7 +55,7 @@ elseif isGamepadEnabled and isTouchEnabled then
     -- Tool
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = "smite'em"
+    tool.Name = "smile.lol"
     
     -- Key To Click Simulates
     tool.Activated:connect(function()
@@ -84,7 +84,7 @@ elseif isMouseEnabled and isMouseEnabled and isTouchEnabled then
     -- Tool
     local tool = Instance.new("Tool")
     tool.RequiresHandle = false
-    tool.Name = "smite'em"
+    tool.Name = "smile.lol"
     
     -- Key To Click Simulates
     tool.Activated:connect(function()
