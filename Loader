@@ -1,6 +1,6 @@
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('loaded', 'smite them with V', 5)
+NotifyLib.prompt('loaded', 'smite them with Z', 5)
 
 -- Service
 local UserInputService = game:GetService("UserInputService")
@@ -247,7 +247,7 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
                 Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
                     Title = "unlocked",
-                    Text = "scaring: "..tostring(Plr.Character.Humanoid.DisplayName),
+                    Text = "from: "..tostring(Plr.Character.Humanoid.DisplayName),
                     Duration = 1.5
                 })
             end
@@ -256,8 +256,8 @@ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
             enabled = true
             if Settings.rewrittenmain.NOTIF == true then
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = "Locked",
-                    Text = "Victim: "..tostring(Plr.Character.Humanoid.DisplayName),
+                    Title = "locked",
+                    Text = "victim: "..tostring(Plr.Character.Humanoid.DisplayName),
                     Duration = 2.5
                 })
             end
@@ -343,9 +343,9 @@ game:GetService("RunService").Stepped:connect(function()
 
         if tick() - lastNotificationTime >= 5 then
             game.StarterGui:SetCore("SendNotification", {
-                Title = "Auto Prediction",
-                Text = "Prediction: "..predictionValue,
-                Duration = 2.5
+                Title = "auto ptrediction",
+                Text = "prediction: "..predictionValue,
+                Duration = 0
             })
             lastNotificationTime = tick()
         end
@@ -498,9 +498,6 @@ RunService.RenderStepped:Connect(function()
 	end
 end)
 
-NotifyLib.prompt('loading', 'bang bang', 5)
-
--- DO NOT DELETE THIS:
 --[[
 
  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
@@ -514,7 +511,7 @@ NotifyLib.prompt('loading', 'bang bang', 5)
 | |              | || |  |_______|   | || |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
-Obfuscated by TheRealX_ORA on YT 
+obfuscated bro
 
 ]]--
 
